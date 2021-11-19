@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esses site em vários dispositivos diferentes, ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMAGENS/fotop.png">
+        <source media="(max-width: 1050px )" srcset="IMAGENS/fotom.png">
+        <img src="IMAGENS/fotog.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudio no HTML5</p>
+    <audio preload="metadata" controls loop >
+        <source src="midia/Bay Street Billionaires - Squadda B.mp3" type="audio/mpeg">
+        <source src="midia/Bay Street Billionaires - Squadda B.mp3" type="audio/ogg">
+        <source src="midia/Bay Street Billionaires - Squadda B.mp3" type="audio/wav">
+        <P>Infelizmente seu navegador não consegue reproduzir áudio <br>
+        <a href="midia/Bay Street Billionaires - Squadda B.mp3">Clique aqui para fazer o download do arquivo!</a></P>
+    </audio>
+
+    <H1>Inserindo vídeos hospedados localmente</H1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+    <video width="200" poster="midia/Sem título.png" controls>
+    <source src="video/20210722_010353.mp4" type="video/m4v">
+    <source src="video/20210722_010353.mp4" type="video/mp4">
+   </video>
+   <h1>Inserindo videos do youtube</h1> 
+   <iframe width="400" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q?controls=0&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <h1>Inserindo vídeos apartir da incorporação do vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff0179&title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

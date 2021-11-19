@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: cornflowerblue;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: red;
+            content:'→';
+        }
+        a::after{
+            content:' [link]' ;
+            
+        }
+        a::before{
+            content: '→'
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCpkZ7Z_J8RJvRtYc3JQdh0g" target="_blank">Canal da Mikann</a></li>
+        <li><a href="https://www.youtube.com/user/GameofThrones">Canal oficial de GOT</a></li>
+        <li><a href="https://www.youtube.com/user/einerdtv">Canal aleatório que fale sobre GOT</a></li>
+
+    </ul>
+
+
+</body>
+</html>

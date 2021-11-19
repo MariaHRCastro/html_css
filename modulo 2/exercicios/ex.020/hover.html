@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        div{
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        div:hover{
+            background-color: brown;
+        }
+        div>p{
+            display: none;
+        }
+        div:hover >p{
+            display: block;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Novamente, casas de Game of thrones </h1>
+    <p>Selecione a casa sobre a qual você quer saber mais</p>
+    <div>Casas Lannister
+        <p>O leão do Rochedo. <br> Superestimados demais.</p>
+    </div>
+    <div>Casa Stark</div>
+    <div>Casa Baratheon</div>
+    <div>Casa Targaeryan</div>
+    <div>Casa Greyjoy ( nós também não ligamos, mas tem que ter, né rsrs)</div>
+
+
+</body>
+</html>
